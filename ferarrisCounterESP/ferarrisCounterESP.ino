@@ -103,9 +103,9 @@ typedef enum { MEASURING, MEASURING_DONE, MEAS_IDLE} sm_M;
 sm_M measStateMachine = MEAS_IDLE;
 
 // web presence
-#import "header.h"
-#import "index.h"
-#import "footer.h"
+#import "html/header.h"
+#import "html/index.h"
+#import "html/footer.h"
 
 void handleRoot() {
   String head = HEADER_page;
