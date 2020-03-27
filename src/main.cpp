@@ -36,15 +36,16 @@
 #include <EEPROM.h>
 
 // WiFi Settings
-const char* host = "HOSTNAME";
+#include <credentials.h>
+const char* host = HOSTNAME;
 const char* update_path = "/firmware";
-const char* update_username = "ADMIN_USER";
-const char* update_password = "ADMIN_PASS";
-const char* SSID  ="SSID";
-const char* PSK = "PSK";
+const char* update_username = ADMIN_USER;
+const char* update_password = ADMIN_PASS;
+const char* SSID  = WIFI_SSID;
+const char* PSK = WIFI_PSK;
 
 // MQTT Settings
-const char* MQTT_BROKER = "BROKER_IP";
+const char* MQTT_BROKER = BROKER_IP;
 
 // ESP,MQTT,HTTP base functionality
 WiFiClient espClient;
